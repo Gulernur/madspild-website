@@ -13,7 +13,8 @@
     .background {
         position: absolute;
         top: auto;
-        height: 100%;
+        bottom: auto;
+        height: 81.8%;
         width: 100%;
         opacity: 55%;
     }
@@ -66,14 +67,30 @@
         flex-wrap: wrap;
         height: 200px;
         width: 335px;
-        border-left: solid;
         z-index: 10;
+        background: #256670;
     }
+
+    .articleBorder{
+        display: flex;
+        flex-wrap: wrap;
+        height: 200px;
+        width: 335px;
+        border-left: solid;
+        border-right: solid;
+        border-color: wheat;
+        z-index: 10;
+        background: #256670;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
 
     .bigBox{
         display: flex;
         justify-content: space-around;
         margin-top: 5%;
+        background: #256670;
     }
 
     h4 {
@@ -85,6 +102,15 @@
     a {
         text-decoration: none;
         color: #EDFA8B;
+    }
+
+    b {
+        text-decoration: none;
+        color: white;
+    }
+    c {
+        text-decoration: none;
+        color: wheat;
     }
 </style>
 <body>
@@ -100,6 +126,9 @@
     </div>
     <div class="text" style="margin: 0 235px">
         <a href="../../../../../madspild_website/src/main/resources/templates/joinMovement.html"><h4>Join movement</h4></a>
+    </div>
+    <div class="text" style="margin: 10px 1050px">
+        <img src="lovefood.png" alt="logo" width="200" height="200">
     </div>
 </div>
 <div class="background">
@@ -127,31 +156,28 @@
     </div>
 <div class="bigBox">
     <div class="mainArticle">
-    <div><h1>Article header</h1>
+    <div><h1><c>We don’t see our own waste</c></h1>
     </div>
         <div>
-        <p>Lines from article,
-        bla bla bla
-        bla bla bla
-        bla bla bla
+        <p><b>“It’s a pretty universal response to any negative accusation,”
+            said Ohio State Food Waste...<br>
+            (Read more)</b>
         </p>
         </div>
     </div>
 
-    <div class="mainArticle">
-        <h1>Article header</h1>
-        <p>Lines from article,
-            bla bla bla
-            bla bla bla
-            bla bla bla
+    <div class="articleBorder">
+        <h1><c>We don’t see our own waste</c></h1>
+        <p><b>“It’s a pretty universal response to any negative accusation,”
+            said Ohio State Food Waste...<br>
+            (Read more)</b>
         </p>
     </div>
     <div class="mainArticle">
-        <h1>Article header</h1>
-        <p>Lines from article,
-            bla bla bla
-            bla bla bla
-            bla bla bla
+        <h1><c>We don’t see our own waste</c></h1>
+        <p><b>“It’s a pretty universal response to any negative accusation,”
+            said Ohio State Food Waste...<br>
+            (Read more)</b>
         </p>
     </div>
 </div>
