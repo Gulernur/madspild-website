@@ -5,19 +5,20 @@
     <title>Front Page</title>
 </head>
 <style>
-    body{
+    body {
         margin: 0;
         padding: 0;
     }
-    .background{
+
+    .background {
         position: absolute;
-        top: 0%;
+        top: auto;
         height: 100%;
         width: 100%;
         opacity: 50%;
     }
 
-    h1{
+    h1 {
         font-family: "Times New Roman", sans-serif;
         font-weight: bolder;
         font-size: 25px;
@@ -25,12 +26,13 @@
         text-align: center;
     }
 
-    .centerText{
+    .centerText {
         position: relative;
         padding-top: 20%;
 
     }
-    .text{
+
+    .text {
         position: absolute;
         display: block;
         float: left;
@@ -38,27 +40,47 @@
         z-index: 1;
 
     }
-    h4{
-        font-family: "Times New Roman",sans-serif;
+
+    .div1 {
+        display: block;
+        height: 50px;
+        width: auto;
+        background-color: #256670;
+
+    }
+
+    h4 {
+        font-family: "Times New Roman", sans-serif;
         font-weight: bolder;
         font-size: 15px;
     }
 
-    a{
+    a {
         text-decoration: none;
-        color: black;
+        color: wheat;
     }
 </style>
 <body>
-<div class="text" style="margin: 0 20px">
-    <a href="../../../../../madspild_website/src/main/resources/templates/about.html"><h4>About</h4></a>
+<div class="div1">
+    <div class="text" style="margin: 0 20px">
+        <a href="../../../../../madspild_website/src/main/resources/templates/about.html"><h4>About</h4></a>
+    </div>
+    <div class="text" style="margin: 0 70px">
+        <a href="../../../../../madspild_website/src/main/resources/templates/courses.html"><h4>Courses</h4></a>
+    </div>
+    <div class="text" style="margin: 0 135px">
+        <a href="../../../../../madspild_website/src/main/resources/templates/attendEvent.html"><h4>Attend event</h4></a>
+    </div>
+    <div class="text" style="margin: 0 235px">
+        <a href="../../../../../madspild_website/src/main/resources/templates/joinMovement.html"><h4>Join movement</h4></a>
+    </div>
 </div>
-    <div class="background">
-        <img class="background" src="food-waste.jpeg">
-    </div>
-    <div class="centerText">
-        <h1> Insert nice ass quote here </h1>
-    </div>
+<div class="background">
+    <img class="background" src="food-waste.jpeg">
+</div>
+<div class="centerText">
+    <h1> Insert nice ass quote here </h1>
+</div>
 
 </body>
 </html>

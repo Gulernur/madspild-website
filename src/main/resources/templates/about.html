@@ -7,38 +7,34 @@
 </head>
 <style>
 
-<!-- wrappers -->
+    body{
+        margin: 0;
+        background-color: #256670;
+    }
 
-.vm-wrapper{
-    display: flex;
-    margin-left: 70px;
-    margin-right: 70px;
-}
+    p{
+        font-size: 16px;
+    }
 
-.vm-wrapper span{
-    flex: 1;
-}
 
 <!-- boxes -->
 
- .box1{
-     border: 2px outset azure;
-     width: 600px;
-     height: 350px;
-     float: left;
+ .team-box{
+     background-color: #256670;
+     height: 300px;
+     width: auto;
  }
 
- .box2{
-     border: 2px outset azure;
-     width: 600px;
-     height: 350px;
-     float: right;
- }
 
  .about-box{
      width: 1000px;
      height: 250px;
      float: right;
+ }
+
+ .top-block{
+     height: 30px;
+     width: auto;
  }
 
  <!-- margins -->
@@ -49,23 +45,36 @@
  }
 
  .about-margin{
-     margin-left: 30px;
-     margin-right: 50px;
+     margin-left: auto;
+     margin-right: auto;
+     background-color: floralwhite;
 
  }
 
- <!-- text formats -->
+    .box1{
+        background-color: floralwhite;
+        margin-left: auto;
+        margin-right: auto;
+        height: 260px;
+    }
 
+
+    .box2{
+        display: flex;
+        justify-content: space-around;
+    }
+
+ <!-- text formats -->
 
 
 </style>
 
 <body>
 
-<h1>Hvem er vi?</h1>
-<h2>Vores mission:</h2>
+<div class="top-block">
+    </div>
 
-<hr>
+<br>
 <div class="about-margin">
 
     <img src="lovefood.png" alt="logo" height="250" width="250">
@@ -84,11 +93,31 @@
 
         <!-- text from: https://nordsense.com/about-us/ -->
     </div>
-
 </div>
-<hr>
 
 <br>
+<br>
+
+    <div class="box1">
+
+        <br>
+        <div class="box2">
+            <img src="kenn.png" alt="Kenneth" width="200" height="200">
+            <img src="stoffer.jpeg" alt="Christopher" width="200" height="200">
+            <img src="me.jpeg" alt="Maja" width="200" height="200">
+            <img src="gugu.png" alt="Güler" width="200" height="200">
+        </div>
+
+        <div class="box2">
+            <p>Kenneth (data-analyst)</p>
+            <p>Christopher (head of testing)</p>
+            <p>Maja (Human resources)</p>
+            <p>Güler (Vice president)</p>
+        </div>
+
+    </div>
+
+
 
 
 </body>
