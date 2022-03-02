@@ -16,6 +16,16 @@
         font-size: 16px;
     }
 
+    a{
+        text-decoration: none;
+        color: #256670;
+    }
+
+    p{
+        text-decoration: none;
+        color: #256670;
+    }
+
 
 <!-- boxes -->
 
@@ -46,7 +56,7 @@
      margin-left: auto;
      margin-right: auto;
      background-color: floralwhite;
-
+     height: 250px;
  }
 
     .box1{
@@ -73,13 +83,23 @@
 
     .box4{
        height: 200px;
-        width: 200px;
+        width: auto;
         margin-left: 50px;
     }
 
-    box5{
+    .flex-box{
+        display: flex;
+        justify-content: space-around;
         height: 200px;
-        width: 200px;
+    }
+
+    .statement{
+        display: flex;
+        flex-wrap: wrap;
+        height: 200px;
+        width: 40%;
+        z-index: 10;
+        background: floralwhite;
     }
 
 
@@ -99,20 +119,52 @@
     <img src="lovefood.png" alt="logo" height="250" width="250">
 
     <div class="about-box">
-        <h1>Who are we?</h1>
+        <h1>Our mission</h1>
 
-
-        <h4>LoveFood® is on a mission to redefine the waste management industry, by educating private and business cutsomers,
-            with data collected and presented by the worlds most renowned food waste researchers.</h4>
-
-        <h4>We believe a data-driven approach is the key to kickstarting a smart waste management revolution.</h4>
-
-        <h4> With almost 90% of the world’s food waste being handled incorrectly, LoveFood® was born out of a desire to
-            address the inefficiency and lack of sustainability in traditional waste management.</h4>
+        <p>
+            LoveFood® is on a mission to redefine the waste management industry, by educating private and business cutsomers,
+            with data collected and presented by the worlds most renowned food waste researchers.
+            <br>
+            <br>
+            We believe a data-driven approach is the key to kickstarting a smart waste management revolution.
+            <br>
+            <br>
+            With almost 90% of the world’s food waste being handled incorrectly, LoveFood® was born out of a desire to
+            address the inefficiency and lack of sustainability in traditional waste management.
+        </p>
 
         <!-- text from: https://nordsense.com/about-us/ -->
     </div>
+
+
+
 </div>
+
+<br>
+<br>
+
+<div class="flex-box">
+
+
+    <div class="statement">
+        <div class="box4">
+            <h1>Biggest contributors</h1>
+
+                <a href="https://www.caritas.org/what-we-do/food/"><h4>Caritas: (Vatican City, Italy)</h4></a>
+                <a href="https://clf.jhsph.edu"><h4>Center for a Livable Future: (Baltimore, Maryland, United States)</h4></a>
+                <a href="https://feedbackglobal.org"><h4>Feedback: (London, England)</h4></a>
+
+        </div>
+
+
+    </div>
+
+    <div class="statement">
+
+    </div>
+
+</div>
+
 
 <br>
 
@@ -158,6 +210,7 @@
         </p>
     </div>
 </div>
+
 </body>
 
 </html>
