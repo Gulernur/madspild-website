@@ -120,7 +120,7 @@
 <body>
 <div class="div1">
     <div class="text" style="margin: 0 20px">
-        <a href="../../../../../madspild_website/src/main/resources/templates/about.html"><h4>About</h4></a>
+        <a href="/about"><h4>About</h4></a>
     </div>
     <div class="text" style="margin: 0 70px">
         <a href="../../../../../madspild_website/src/main/resources/templates/courses.html"><h4>Courses</h4></a>
@@ -132,11 +132,11 @@
         <a href="../../../../../madspild_website/src/main/resources/templates/joinMovement.html"><h4>Join movement</h4></a>
     </div>
     <div class="text" style="margin: 10px 82%">
-        <img src="lovefood.png" alt="logo" width="200" height="200">
+        <img th:src="@{lovefood.png}" alt="logo" width="200" height="200">
     </div>
 </div>
 <div class="background">
-    <img class="background" src="food-waste.jpeg">
+    <img class="background" th:src="@{food-waste.jpeg}">
 </div>
 <div>
     <h1> The fight against food waste! </h1>
