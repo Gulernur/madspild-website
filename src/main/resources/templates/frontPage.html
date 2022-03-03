@@ -47,27 +47,36 @@
         width: 25%;
     }
 
-    .text {
-        position: absolute;
-        display: block;
-        float: left;
-        padding-right: 15px;
-        z-index: 1;
+    .div1 {
+        display: flex;
+        justify-content: flex-start;
+        height: 50px;
+        background-color: #256670;
+        line-height: 0.7;
 
     }
 
-    .div1 {
-        display: block;
-        height: 50px;
-        width: auto;
-        background-color: #256670;
+    .div2{
+        display: flex;
+        justify-content: space-around;
+        height: auto;
+        font-size: 100%;
+        width: 75%;
 
+    }
+
+    .logo-div{
+        display: flex;
+        justify-content: center;
+        margin-left: 7%;
+        margin-top: 1%;
+        z-index: 1;
     }
     
     .mainArticle{
         display: flex;
         flex-wrap: wrap;
-        height: 200px;
+        height: 250px;
         width: 33%;
         z-index: 10;
         background: #256670;
@@ -77,7 +86,7 @@
     .articleBorder{
         display: flex;
         flex-wrap: wrap;
-        height: 200px;
+        height: 250px;
         width: 33%;
         border-left: solid;
         border-right: solid;
@@ -119,19 +128,22 @@
 </style>
 <body>
 <div class="div1">
-    <div class="text" style="margin: 0 20px">
+    <div class="div2">
+    <div>
         <a href="/about"><h4>About</h4></a>
     </div>
-    <div class="text" style="margin: 0 70px">
+    <div>
         <a href="courses"><h4>Courses</h4></a>
     </div>
-    <div class="text" style="margin: 0 135px">
+    <div>
         <a href="attendEvent"><h4>Attend event</h4></a>
     </div>
-    <div class="text" style="margin: 0 235px">
+    <div>
         <a href="joinMovement"><h4>Join movement</h4></a>
     </div>
-    <div class="text" style="margin: 10px 82%">
+
+    </div>
+    <div class="logo-div">
         <img th:src="@{lovefood.png}" alt="logo" width="200" height="200">
     </div>
 </div>
