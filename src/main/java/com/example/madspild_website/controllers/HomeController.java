@@ -15,4 +15,19 @@ public class HomeController {
     public String about(){
         return "about";
     }
+
+    @GetMapping("/courses")
+    public String courses(){
+        return "courses";
+    }
+
+    @GetMapping("/attendEvent")
+    public String attendEvent(){
+        return "attendEvent";
+    }
+
+    @GetMapping("/joinMovement")
+    public String joinMovement(){
+        return "joinMovement";
+    }
 }
